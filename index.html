@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintu Fitness</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url("bg.jpg");
+            color: white;
+            font-family: 'Baloo Bhai', cursive;
+
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 34px;
+        }
+
+        .left img {
+            filter: invert(100%);
+            width: 130px;
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 23px;
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            width: 76%;
+            margin: 70px auto;
+        }
+
+        .right {
+            /* border: 2px solid yellow; */
+            display: inline-block;
+            position: absolute;
+            top: 72px;
+            right: 66px;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: rgb(31, 26, 26);
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid gray;
+            border-radius: 25px;
+            font-family: 'Baloo Bhai', cursive;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(186, 184, 184);
+        }
+
+        .navbar {
+            /* display: inline-block; */
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            font-size: 32px;
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(204, 202, 202);
+        }
+
+        .container {
+            border: 2px solid white;
+            margin-left: 65px;
+            margin-top: 125px;
+            /* padding: 60px 25px; */
+            width: 46%;
+            border-radius: 70px;
+        }
+
+        .container h1 {
+            text-align: center;
+            border: 0px 0px;
+        }
+
+        .container div button {
+            text-align: center;
+            display: block;
+            width: 518px;
+            padding: 5px;
+            border: 2px solid black;
+            margin: 16px auto;
+            font-size: 26px;
+            border-radius: 44px;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        .group-control input {
+            text-align: center;
+            display: block;
+            width: 519px;
+            padding: 6px;
+            border: 2px solid black;
+            margin: 5px auto;
+            font-size: 20px;
+            border-radius: 13px;
+            font-family: 'Baloo Bhai', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+        <!-- for the left box -->
+        <div class="left">
+            <img src="logo1.jpg" alt="">
+            <div>Pintu Fitness</div>
+        </div>
+
+        <!-- for the mid box -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="fitness_calculator.html">Fitness Calculator</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- for the right box -->
+        <div class="right">
+            <button onclick="window.location.href = 'call_us_now.html';"class="btn">Call Us Now</button>
+            <button onclick="window.location.href = 'email_us.html';"class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the best gym in Ranchi</h1>
+        <form action="noaction.php">
+            <div class="group-control">
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div class="group-control">
+                <input type="text" placeholder="Enter Your Age">
+            </div>
+            <div class="group-control">
+                <input type="text" placeholder="Enter Your Sex">
+            </div>
+            <div class="group-control">
+                <input type="text" placeholder="Enter Your Locality">
+            </div>
+            <div class="group-control">
+                <input type="text" placeholder="Enter Your Mobile Number">
+            </div>
+            <div class="group-control">
+                <input type="text" placeholder="Enter Your Email Address">
+            </div>
+        </form>
+        <div>
+            <button>Submit</button>
+        </div>
+    </div>
+</body>
+
+</html>
